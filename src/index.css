@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+    --font-body: 'Noto Sans KR', 'Noto Sans JP', 'Plus Jakarta Sans', sans-serif;
+    --font-jp: 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #0F172A;
+    background-color: #F8FAFC;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.font-jp {
+  font-family: var(--font-jp);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
